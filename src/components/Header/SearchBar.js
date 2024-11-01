@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState, useRef } from 'react';
+import { ReactComponent as SearchIcon } from '../../assets/search.svg';
 
 // Renders a SearchBar, just a visual representation
 const SearchBar = () => {
@@ -29,7 +30,9 @@ const SearchBar = () => {
             onFocus={handleInputFocus}
             onBlur={handleInputBlur}>
             </input>
-            <span className="material-symbols-outlined text-color-purple">search</span>
+            <div className='text-color-purple'>
+              <SearchIcon/>
+            </div>
         </form>
   </div>
   )

@@ -1,4 +1,6 @@
 import React, { useState } from 'react'
+import { ReactComponent as StarIcon } from '../../assets/star.svg';
+
 
 // Render stars/reviews of a given profit
 const Stars = () => {
@@ -10,9 +12,7 @@ const Stars = () => {
             <div className='text-color-purple'>
                 {/* Create an array of stars based on the starCount */}
                 {Array.from({ length: starCount }).map((_, index) => (
-                    <span key={index} className="material-symbols-outlined" alt='star'>
-                        star
-                    </span>
+                    <StarIcon/>
                 ))}
             </div>
         </div>
