@@ -1,0 +1,245 @@
+:root {
+    --text-color-white: white;
+    --text-color-secondary: #666666;
+    --white-color: white;
+    --light-grey-color: #f1f1f1;
+    --grey-color: #DEE2E6;
+    --mid-grey-color: #495057;
+    --dark-grey-color: #343A40;
+    --green-color: #4481d1;
+    --purple-color: #a670e9;
+    --black-color: black;
+}
+@font-face {
+    font-family: 'Mulish';
+    src: url('/public/fonts/Mulish.woff2'),
+        url('/public/fonts/Mulish.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Golos';
+    src: url('/public/fonts/GolosText.woff2'),
+        url('/public/fonts/GolosText.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Figtree';
+    src: url('/public/fonts/Figtree.woff2'),
+        url('/public/fonts/Figtree.woff');
+    font-weight: normal;
+    font-style: normal;
+}
+body.dark {
+    --white-color: #292929;
+    --light-grey-color: #121212;
+    --text-color-secondary: #9F9F9F;
+    color: white;
+    --black-color: white;
+  }
+body.dark input::placeholder {
+    color: var(--text-color-secondary);
+}
+body {
+    margin: 0;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    background: var(--light-grey-color);
+    font-family: 'Golos',sans-serif;
+} 
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+}
+.font-size-1 {
+    font-size: 1rem;
+}
+.font-reg {
+    font-weight: 500;
+}
+.font-bold {
+    font-weight: 600;
+}
+.font-light {
+    font-weight: 300;
+}
+.page-margin {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.p-bottom {
+    padding-bottom: 1rem;
+}
+.bg-none {
+    background: transparent;
+}
+.bg-white {
+    background: var(--white-color);
+}
+.bg-light-grey {
+    background: var(--light-grey-color);
+}
+.bg-purple {
+    background: var(--purple-color);
+}
+.flex {
+    display: flex;
+}
+.flex-half {
+    flex: .5;
+}
+.flex-1 {
+    flex:1;
+}
+.flex-3 {
+    flex: 3;
+}
+.rounded {
+    border-radius: 12px;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-reverse-column {
+    flex-direction: column-reverse;
+}
+.space {
+    justify-content: space-between;
+}
+.gap-half {
+    gap: .5rem;
+}
+.gap-1 {
+    gap: 1rem;
+}
+.gap-2 {
+    gap: 2rem;
+}
+.p-quarter {
+    padding: .25rem;
+}
+.p-half {
+    padding: .5rem;
+}
+.p-1 {
+    padding: 1rem;
+}
+.p-top {
+    padding-top: 1rem;
+}
+.margin-none {
+    margin: 0;
+}
+.box-shadow {
+    box-shadow: 2px 4px 12px #00000014;
+}
+.card {
+    max-width: 300px;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.center {
+    justify-content: center;
+}
+.align-center {
+    align-items: center;
+}
+.align-start {
+    align-items: flex-start;
+}
+.width-100 {
+    width: 100%;
+}
+.cover {
+    object-fit: cover;
+    height: 100%;
+}
+.pointer {
+    cursor: pointer;
+}
+.grid-column-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.btn {
+    padding: 1rem .5rem;
+    border: none;
+}
+.text-color-secondary {
+    color: var(--text-color-secondary);
+}
+.text-color-black {
+    color: var(--black-color);
+}
+.text-color-white {
+    color: var(--text-color-white);
+}
+.text-color-purple {
+    color: var(--purple-color);
+}
+.border-none {
+    border: none;
+}
+.navbar {
+    height: 10vh;
+}
+.search-bar {
+    padding: .5rem;
+    box-sizing: border-box;
+    cursor: text;
+}
+input:focus {
+    outline: none;
+}
+.navbar-shadow {
+    /*box-shadow: 0px 2px 15px var(--grey-color);*/
+}
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 1,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+.opacity-1 {
+    opacity: 1;
+    transition: all .1s ease-in-out;
+}
+.opacity-0 {
+    opacity: 0;
+    transition: all .1s ease-in-out;
+}
+.overflow-hidden {
+    overflow: hidden;
+}
+.description-image {
+    height: 250px;
+}
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+}
+.numOfItems {
+    position: absolute;
+    top:0;
+    right:0;
+    border-radius: 32px;
+    line-height: 1rem;
+    padding: .15rem .3rem;
+}
+@media (max-width: 767px) { 
+    .search-bar-container input {
+        width: 25%;
+    }
+
+}
+@media (max-width: 400px) { 
+    .search-bar-container input::placeholder {
+        opacity: 0;
+    }
+
+}
