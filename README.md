@@ -16,12 +16,15 @@ Ensure you have the following installed:
 ### Installation
 
 1. **Clone the Repository**  
+
     Open a terminal (git Bash) and run:
     git clone https://github.com/jacobclarke4/3vueReactApp.git
 
 2. **Install Dependencies**
+
     cd 3vueReactApp
     npm install
 
 3. **Run Application**
+
     npm start
